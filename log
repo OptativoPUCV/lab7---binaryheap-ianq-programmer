@@ -26,3 +26,15 @@ heap.c:50:22: error: ‘pos’ undeclared (first use in this function); did you 
 heap.c:50:22: note: each undeclared identifier is reported only once for each function it appears in
 Compilation failed
 b07f550
+Sun 14 May 2023 10:29:59 PM UTC: 
+ heap.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:52:27: error: ‘pos’ undeclared (first use in this function); did you mean ‘pow’?
+   52 |       aux = pq->heapArray[pos];
+      |                           ^~~
+      |                           pow
+heap.c:52:27: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+fadcc68
