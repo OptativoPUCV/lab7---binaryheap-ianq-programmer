@@ -14,3 +14,15 @@ Thu 11 May 2023 05:11:02 PM UTC:
  tests:  2|2
 total_score: 20/70
 3775128
+Sun 14 May 2023 10:29:47 PM UTC: 
+ heap.c | 29 ++++++++++++++++++++++++++++-
+ 1 file changed, 28 insertions(+), 1 deletion(-)
+In file included from test.c:4:
+heap.c: In function ‘heap_push’:
+heap.c:50:22: error: ‘pos’ undeclared (first use in this function); did you mean ‘pow’?
+   50 |     if(pq->heapArray[pos].priority > pq->heapArray[padre].priority)
+      |                      ^~~
+      |                      pow
+heap.c:50:22: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+b07f550
